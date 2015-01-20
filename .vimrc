@@ -4,7 +4,7 @@ set backspace=2
 
 " always show status bar
 set ls=2
-set num
+set nu
 
 " Setting up Vundle - the vim plugin bundler
 let iCanHazVundle=1
