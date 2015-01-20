@@ -2,6 +2,9 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set backspace=2
 
+" always show status bar
+set ls=2
+
 " Setting up Vundle - the vim plugin bundler
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
@@ -50,16 +53,24 @@ Plugin 'bling/vim-airline'
 
 " Terminal Vim with 256 colors colorscheme
 Plugin 'fisadev/fisa-vim-colorscheme'
+
 " Consoles as buffers
 Plugin 'rosenfeld/conque-term'
+
 " Pending tasks list
 Plugin 'fisadev/FixedTaskList.vim'
+
 " Surround
 Plugin 'tpope/vim-surround'
+
 " Autoclose
 Plugin 'Townk/vim-autoclose'
+
 " Indent text object
 Plugin 'michaeljsmith/vim-indent-object'
+
+" Python and other languages code checker
+Plugin 'scrooloose/syntastic'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -89,7 +100,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
-se cursorline
+se nocursorline
 
 " tabs and spaces handling
 set tabstop=4
